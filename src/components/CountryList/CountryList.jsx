@@ -1,13 +1,8 @@
-import Spinner from "../Spinner/Spinner.jsx";
 import Message from "../Message/Message.jsx";
 import CountryItem from "../CountryItem/CountryItem.jsx";
 import styles from "./CountryList.module.css";
 
-function CountryList({ cities, isLoading }) {
-  if (isLoading) {
-    return <Spinner />;
-  }
-
+function CountryList({ cities }) {
   if (cities.length === 0) {
     return (
       <Message message="Add your first city by clicking on city on the map" />
