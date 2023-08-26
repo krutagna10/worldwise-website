@@ -12,8 +12,6 @@ import City from "./components/City/City.jsx";
 import Form from "./components/Form/Form.jsx";
 import data from "../data/data.js";
 
-const BASE_URL = "http://localhost:8000";
-
 function App() {
   const [cities, setCities] = useState(data);
 
